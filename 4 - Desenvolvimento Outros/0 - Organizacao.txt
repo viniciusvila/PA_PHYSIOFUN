@@ -1,0 +1,5 @@
+Aqui será mantido qualquer outro projeto relativo ao jogo, seja ele , audio, imagens,videos e etc. 
+
+* Transferir para a pasta "3 - Desenvolvimento Unity" somente arquivos finais e que serão usados no jogo (ex : mp3,wav,jpg,png,animacoes e objetos finais). 
+	OBS : Sempre informar aos responsáveis pelo Unity a movimentação de arquivos.
+

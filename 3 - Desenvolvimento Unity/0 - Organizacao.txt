@@ -1,0 +1,15 @@
+Manter e controlar nesse diretório somente projetos, arquivos, assets e outros que estão no projeto do jogo.
+TODO E QUALQUER outro arquivo e ou projeto em produção,teste e desenvolvimento será mantido na pasta "4 - Desenvolvimento Outros"
+
+
+Lista de Assets requeridos
+
+* Game Jam Menu Template ( MENU )
+	C:\Users\Noob\Desktop\PA_PHYSIOFUN\4 - Desenvolvimento Outros\6 - Assets Unit Usados no projeto\Game Jam Menu Template.unitypackage
+
+* Kinect with MS-SDK (jogo1)
+      C:\Users\Noob\Desktop\PA_PHYSIOFUN\4 - Desenvolvimento Outros\6 - Assets Unit Usados no projeto\Kinect\Kinect with MS-SDK.unitypackage
+
+
+v1 - menu inicial
+v2 - menu inicial + load jogo1 (vazio)
