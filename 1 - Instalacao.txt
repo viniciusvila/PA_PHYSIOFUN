@@ -1,1 +1,14 @@
+GUIA PARA INSTALAÇÃO E TEST
+
+1 - instalar => KinectSDK-v1.8-Setup.exe
+2 - instalar => KinectDeveloperToolkit-v1.8.0-Setup.exe
+3 - rodar => KinectWithMsSKDTest.exe
+	Ficar na frente do sensor e testar movimentos. Se funcionar o kinect deve estar pronto para Unity
+
+Passos para desenvolvimento no Unity
+4 - instalar => Unity 5.6.0f3 (64-bit)
+5 - abrir Unity =>  um novo projeto e importar o arquivo  "4 - Kinect with MS-SDK.unitypackage"
+
+
+****LINKS DOS ARQUIVOS
 https://drive.google.com/open?id=0B-RN13OOl-JtRGV1Z0tvQjdUa2M
