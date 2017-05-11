@@ -9,6 +9,10 @@ Neste exemplo utilizaremos o terminal Git ou também conhecido como Git Bash par
 
 ## Clonando o repositório remoto para o computador
 
+### Importante!
+
+Em algumas etapas do processos a seguir lhe será solicitado usuário e senha, essas informações dizem respeito ao repositório no qual se está trabalhando, se estiver utilizando o GitHub basta fornecer seu usuário e senha do serviço.
+
 Ao se trabalhar com plataformas como GitHub ou Bitbucket, temos que trazer todos os arquivos que compõe o projeto para o nosso computador, além de trazer uma cópia local do projeto, cria um vínculo do repositório local com o remoto fazendo com que toda nova mudança feita no projeto seja percebida e controlada através do Git.
 
 1º Passo - Clique com o botão direito em um local de sua preferência e clique em Git Bash Here.
