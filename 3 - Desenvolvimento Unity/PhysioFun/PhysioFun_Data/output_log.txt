@@ -1,0 +1,75 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 5500 (ID=0x1616)
+    Vendor:   Intel
+    VRAM:     1131 MB
+    Driver:   10.18.15.4248
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.029 seconds
+Platform assembly: C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\vini\Desktop\Projeto PhysioFun\REPOSITORIO\PA_PHYSIOFUN\3 - Desenvolvimento Unity\PhysioFun\PhysioFun_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 4.928443 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 19b8 -> priority: 1 
+  Thread -> id: 33c -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Transparent/Cutout/Complete': fallback shader 'Transparent/Cutout/BumpedSpecular' not found
+UnloadTime: 2.459556 ms
+Waiting for users.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 812.
+Total: 1.325883 ms (FindLiveObjects: 0.120831 ms CreateObjectMapping: 0.093306 ms MarkObjects: 1.069757 ms  DeleteObjects: 0.040121 ms)
+
+All players calibrated.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Waiting for users.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+All players calibrated.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Waiting for users.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+All players calibrated.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Waiting for users.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+All players calibrated.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Waiting for users.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+All players calibrated.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

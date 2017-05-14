@@ -14,6 +14,12 @@ public class DestroiBolaGol : MonoBehaviour {
 	void Update () {
 		timeVida += Time.deltaTime;
 		if (timeVida >= tempoMaximoVida) {
+
+			GameObject.Find ("GameController")
+				.GetComponent<GerenciadorPlacar>()
+				.addPonto (3);
+
+
 			Destroy (gameObject);
 			timeVida = 0;
 		}
@@ -21,6 +27,11 @@ public class DestroiBolaGol : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision){
 		if(collision.gameObject.name == "Gol"){
+
+			GameObject.Find ("GameController")
+				.GetComponent<GerenciadorPlacar>()
+				.removerPonto (5);
+			
 			Destroy(this.gameObject);
 		}
 	}
