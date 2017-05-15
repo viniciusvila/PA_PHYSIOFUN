@@ -18,8 +18,6 @@ public class DestroiBolaGol : MonoBehaviour {
 			GameObject.Find ("GameController")
 				.GetComponent<GerenciadorPlacar>()
 				.addPonto (3);
-
-
 			Destroy (gameObject);
 			timeVida = 0;
 		}
@@ -31,7 +29,6 @@ public class DestroiBolaGol : MonoBehaviour {
 			GameObject.Find ("GameController")
 				.GetComponent<GerenciadorPlacar>()
 				.removerPonto (5);
-			
 			Destroy(this.gameObject);
 		}
 	}
