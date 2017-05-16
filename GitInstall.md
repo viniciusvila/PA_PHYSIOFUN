@@ -51,3 +51,9 @@ O Git é um software livre, distribuído sob os termos  da GNU. Sua manutenção
 11º passo - Mantenha as duas primeiras opções marcadas e clique em install.
 
 ![decimo primeiro passo](git-images/10.png)
+
+## Configuração inicial no Git
+
+Após a instalação concluída abra o console Git Bash, e digite as seguintes configurações: **git config --global user.name "Seu nome" e logo após digite o segundo comando **git config --global user.email "seu-email@seudominio.com", como na imagem abaixo.
+
+![configuracao inicial](git-image/git-config.png)
