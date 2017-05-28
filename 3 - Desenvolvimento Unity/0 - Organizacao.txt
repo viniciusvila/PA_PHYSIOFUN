@@ -21,3 +21,4 @@ v1 - menu inicial
 v2 - menu inicial + load jogo1 (vazio)
 v3 - v2 + jogo com cenario basico, torres atirando , colisao melhorada de maos e pes, destroy das bolas.
 v4 - v3 + script de Game Controller contabilizando recebendo do script de colisao
+v5 - v4 + script GiraTurreta

@@ -1,11 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GiraTurreta.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GerenciadorPlacar.cs">
     <Files>
-      <File FileName="Assets\Scripts\atirarProjetil.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\DestroiBolaGol.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GerenciadorPlacar.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GiraTurreta.cs" Line="26" Column="3" />
+      <File FileName="Assets\Scripts\GerenciadorPlacar.cs" Line="63" Column="4" />
+      <File FileName="Assets\Scripts\DestroiBolaGol.cs" Line="23" Column="1" />
+      <File FileName="Assets\Scripts\mudaCena.cs" Line="9" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
