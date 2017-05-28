@@ -10,6 +10,15 @@ Lista de Assets requeridos
 * Kinect with MS-SDK (jogo1)
       C:\Users\Noob\Desktop\PA_PHYSIOFUN\4 - Desenvolvimento Outros\6 - Assets Unit Usados no projeto\Kinect\Kinect with MS-SDK.unitypackage
 
+* WCE - Turret
+	C:\Users\Noob\Desktop\PA_PHYSIOFUN\4 - Desenvolvimento Outros\6 - Assets Unit Usados no projeto\WCE - Turret.unitypackage
+
+* Low Polygon Soccer Ball
+	C:\Users\Noob\Desktop\PA_PHYSIOFUN\4 - Desenvolvimento Outros\6 - Assets Unit Usados no projeto\Low Polygon Soccer Ball.unitypackage
+
 
 v1 - menu inicial
 v2 - menu inicial + load jogo1 (vazio)
+v3 - v2 + jogo com cenario basico, torres atirando , colisao melhorada de maos e pes, destroy das bolas.
+v4 - v3 + script de Game Controller contabilizando recebendo do script de colisao
+v5 - v4 + script GiraTurreta
