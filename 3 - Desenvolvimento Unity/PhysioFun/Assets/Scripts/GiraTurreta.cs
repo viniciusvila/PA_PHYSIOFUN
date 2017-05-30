@@ -21,8 +21,11 @@ public class GiraTurreta : MonoBehaviour {
 	void Update () {
 
 
+		if (GameObject.Find ("GameController")
+			.GetComponent<GerenciadorPlacar> ()
+			.jogoterminado == 0) {
 			girarturreta ();
-
+		}
 
 	}
 

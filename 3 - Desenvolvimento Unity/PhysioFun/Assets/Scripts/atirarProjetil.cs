@@ -28,10 +28,16 @@ public class atirarProjetil : MonoBehaviour {
 	}
 	void Shoot (){
 //		if (Input.GetKeyDown (KeyCode.F)) {
+			
+		if (GameObject.Find ("GameController")
+			.GetComponent<GerenciadorPlacar> ()
+			.jogoterminado == 0) {
 			Rigidbody projetilInstanciado;
 			projetilInstanciado = Instantiate (projetil, finaldoCano.position, finaldoCano.rotation) as Rigidbody;
 
 			projetilInstanciado.AddForce (finaldoCano.forward * forcaTiro); 
+		}
+
 
 //		}
 	}

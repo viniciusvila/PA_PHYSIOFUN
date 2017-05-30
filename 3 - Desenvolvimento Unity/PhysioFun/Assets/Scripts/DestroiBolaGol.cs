@@ -57,6 +57,8 @@ public class DestroiBolaGol : MonoBehaviour {
 
 			Destroy(this.gameObject);
 		}
+
+	
 	}
 
 
