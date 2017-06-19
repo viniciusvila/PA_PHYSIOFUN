@@ -57,6 +57,7 @@
      <Compile Include="Assets\Game Jam Template\Scripts\SetAudioLevels.cs" />
      <Compile Include="Assets\Game Jam Template\Scripts\ShowPanels.cs" />
      <Compile Include="Assets\Game Jam Template\Scripts\StartOptions.cs" />
+     <Compile Include="Assets\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
      <Compile Include="Assets\GesturesDemo\Scripts\GestureListener.cs" />
      <Compile Include="Assets\GesturesDemo\Scripts\PresentationScript.cs" />
      <Compile Include="Assets\KinectScripts\AvatarController.cs" />
@@ -81,6 +82,7 @@
      <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
      <Compile Include="Assets\OverlayDemo\Scripts\KinectOverlayer.cs" />
      <Compile Include="Assets\Scripts\DestroiBolaGol.cs" />
+     <Compile Include="Assets\Scripts\DestroiPowerUP.cs" />
      <Compile Include="Assets\Scripts\GerenciadorPlacar.cs" />
      <Compile Include="Assets\Scripts\GiraTurreta.cs" />
      <Compile Include="Assets\Scripts\atirarProjetil.cs" />

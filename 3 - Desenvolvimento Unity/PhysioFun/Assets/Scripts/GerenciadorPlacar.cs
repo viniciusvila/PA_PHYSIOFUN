@@ -15,6 +15,14 @@ public class GerenciadorPlacar : MonoBehaviour {
 	public int pontosVitoria;
 	public int pontosDerrota;
 
+	public int comboDefesa = 0;
+	public int comboCoracao = 0;
+	public int coracaoAtivo = 4;
+	public int bombaAtivo = 1;
+
+	public int progressaoContador = 0;
+	public int comboDefesaMax = 0;
+
 	public int tocouMusica = 0;
 	public int jogoterminado = 0;
 
@@ -23,6 +31,8 @@ public class GerenciadorPlacar : MonoBehaviour {
 	void Start () {
 		
 	}
+
+
 
 	void Update () {
 		if (voltaMenu == 1) {
@@ -37,6 +47,29 @@ public class GerenciadorPlacar : MonoBehaviour {
 	public void addPonto(int valor) {
 		pontuacaoTotal += valor;
 		bolasDefendidas += 1;
+		comboDefesa += 1;
+
+		// TESTA SE O JOGADOR VAI BEM PARA AUMENTAR DIFICULDADE
+		comboDefesaMax ++;
+		if (comboDefesaMax >= 3) {
+			progressaoContador ++;
+			comboDefesaMax = 0;
+
+			//AUMENTA ROTACAO TURRETA
+			GameObject.Find ("TorreD")
+				.GetComponent<GiraTurreta> ()
+				.velocidade = GameObject.Find ("TorreD")
+					.GetComponent<GiraTurreta> ()
+					.velocidade + 5;
+			//AUMENTA FORCA BOLA
+			GameObject.Find ("TorreD")
+				.GetComponent<atirarProjetil> ()
+				.forcaTiro = GameObject.Find ("TorreD")
+					.GetComponent<atirarProjetil> ()
+					.forcaTiro + 10;
+		}
+	
+
 		if (jogoterminado == 0) {
 			atualizarPontuacao ();
 		}
@@ -45,6 +78,7 @@ public class GerenciadorPlacar : MonoBehaviour {
 	public void removerPonto(int valor) {
 		pontuacaoTotal -= valor;
 		golsTomados += 1;
+		comboDefesa = 0;
 		if (jogoterminado == 0) {
 			atualizarPontuacao ();
 		}
@@ -77,16 +111,8 @@ public class GerenciadorPlacar : MonoBehaviour {
 		defesas.text = "Defesas: " + bolasDefendidas;
 		score.text = "Pontuação: " + pontuacaoTotal;
 
-
-		if (pontuacaoTotal >= pontosVitoria) {
-			
-			tocaaMusica (0);
-			GameObject.Find ("vitoria").GetComponent<Image> ().enabled = true;
-			timeVida = 23f;
-			jogoterminado = 1;
-			voltaMenu = 1;
-
-		} else if (pontuacaoTotal <= pontosDerrota) {
+		// CONDICAO DE DERROTA
+		if (golsTomados >= pontosDerrota) {
 
 			tocaaMusica (1);
 			GameObject.Find ("gameover").GetComponent<Image> ().enabled = true;
@@ -94,7 +120,17 @@ public class GerenciadorPlacar : MonoBehaviour {
 			jogoterminado = 1;
 			voltaMenu = 1;
 
+		} 
+		// CONDICAO DE VITORIA
+		/* else if (bolasDefendidas >= pontosVitoria) {
+
+			tocaaMusica (0);
+			GameObject.Find ("vitoria").GetComponent<Image> ().enabled = true;
+			timeVida = 23f;
+			jogoterminado = 1;
+			voltaMenu = 1;
 		}
+		*/
 
 	}
 
