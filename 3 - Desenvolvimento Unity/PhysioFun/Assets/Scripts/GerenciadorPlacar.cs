@@ -24,17 +24,32 @@ public class GerenciadorPlacar : MonoBehaviour {
 	public int comboDefesaMax = 0;
 
 	public int tocouMusica = 0;
+	public float pausaInicial;
+	public int jogoAtivo = 0;
 	public int jogoterminado = 0;
 
 	private float timeVida;
 	private int voltaMenu = 0;
+
+
 	void Start () {
-		
+		//pausaInicial = 10f;
 	}
 
 
 
 	void Update () {
+
+		pausaInicial -= Time.deltaTime;
+		if (pausaInicial <= 0) {
+			GameObject.Find ("gols").GetComponent<Text> ().enabled = true;
+			GameObject.Find ("defendidas").GetComponent<Text> ().enabled = true;
+			GameObject.Find ("pontosObitidos").GetComponent<Text> ().enabled = true;
+			jogoAtivo = 1;
+
+		}
+
+		//testa FIM DE JOGO , VOLTA MENU
 		if (voltaMenu == 1) {
 			timeVida -= Time.deltaTime;
 			if (timeVida <= 0) {
@@ -66,7 +81,7 @@ public class GerenciadorPlacar : MonoBehaviour {
 				.GetComponent<atirarProjetil> ()
 				.forcaTiro = GameObject.Find ("TorreD")
 					.GetComponent<atirarProjetil> ()
-					.forcaTiro + 10;
+					.forcaTiro + 5;
 		}
 	
 
@@ -116,7 +131,7 @@ public class GerenciadorPlacar : MonoBehaviour {
 
 			tocaaMusica (1);
 			GameObject.Find ("gameover").GetComponent<Image> ().enabled = true;
-			timeVida = 5f;
+			timeVida = 10f;
 			jogoterminado = 1;
 			voltaMenu = 1;
 

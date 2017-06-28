@@ -50,7 +50,7 @@ public class DestroiBolaGol : MonoBehaviour {
 
 			GameObject.Find ("GameController")
 				.GetComponent<GerenciadorPlacar>()
-				.addPonto (3);
+				.addPonto (5);
 
 			AudioSource audio = GameObject.Find ("Bola_Sucesso").GetComponent<AudioSource>();
 			audio.Play();

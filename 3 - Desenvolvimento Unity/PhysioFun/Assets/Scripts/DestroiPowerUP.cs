@@ -6,26 +6,28 @@ public class DestroiPowerUP : MonoBehaviour {
 
 	private float timeVida;
 	public int tipoPower;
-
-
-
+	public float tempoMaximoVida;
 
 
 
 	void Start () {
-		
+		timeVida = 0;
 
 	}
 
 	void Update () {
-		
+		timeVida += Time.deltaTime;
+		if (timeVida >= tempoMaximoVida) {
+			Destroy (gameObject);
+			timeVida = 0;
+		}
 	}
 
 	void OnCollisionEnter(Collision collision){
 		
 
-		if ((collision.gameObject.name == "joint_Char") && (tipoPower == 0)) {
 
+		if ((collision.gameObject.name == "joint_Char") || (collision.gameObject.name == "CUBO_COLISAO_ES") || (collision.gameObject.name == "CUBO_COLISAO_DT") && (tipoPower == 0)) {
 
 			GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().golsTomados -= 2;
 			GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().atualizarPontuacao ();
@@ -37,7 +39,7 @@ public class DestroiPowerUP : MonoBehaviour {
 			Destroy (this.gameObject);
 		} 
 
-		if((collision.gameObject.name == "joint_Char") && (tipoPower == 1)) {
+		if((collision.gameObject.name == "joint_Char") || (collision.gameObject.name == "CUBO_COLISAO_ES") || (collision.gameObject.name == "CUBO_COLISAO_DT")  && (tipoPower == 1)) {
 
 			GameObject.Find ("GameController").GetComponent<GerenciadorPlacar>().removerPonto (6);
 

@@ -1,13 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DestroiPowerUP.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DestroiBolaGol.cs">
     <Files>
-      <File FileName="Assets\Scripts\GerenciadorPlacar.cs" Line="74" Column="15" />
-      <File FileName="Assets\Scripts\DestroiPowerUP.cs" Line="31" Column="29" />
-      <File FileName="Assets\Scripts\DestroiBolaGol.cs" Line="13" Column="2" />
-      <File FileName="Assets\Scripts\atirarProjetil.cs" Line="88" Column="5" />
-      <File FileName="Assets\KinectScripts\AvatarController.cs" Line="490" Column="59" />
-      <File FileName="Assets\KinectScripts\KinectManager.cs" Line="990" Column="36" />
+      <File FileName="Assets\Scripts\GerenciadorPlacar.cs" Line="76" Column="45" />
+      <File FileName="Assets\Scripts\DestroiPowerUP.cs" Line="56" Column="1" />
+      <File FileName="Assets\Scripts\DestroiBolaGol.cs" Line="54" Column="4" />
+      <File FileName="Assets\Scripts\atirarProjetil.cs" Line="22" Column="3" />
+      <File FileName="Assets\Scripts\LimitaEixoZ.cs" Line="27" Column="102" />
+      <File FileName="Assets\Scripts\GiraTurreta.cs" Line="26" Column="16" />
+      <File FileName="Assets\KinectScripts\AvatarController.cs" Line="19" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

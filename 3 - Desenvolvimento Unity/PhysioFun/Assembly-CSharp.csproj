@@ -81,10 +81,14 @@
      <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
      <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
      <Compile Include="Assets\OverlayDemo\Scripts\KinectOverlayer.cs" />
+     <Compile Include="Assets\ProgressBar\Script\ProgressBarBehaviour.cs" />
+     <Compile Include="Assets\ProgressBar\Script\ProgressRadialBehaviour.cs" />
+     <Compile Include="Assets\ProgressBar\Script\Utils.cs" />
      <Compile Include="Assets\Scripts\DestroiBolaGol.cs" />
      <Compile Include="Assets\Scripts\DestroiPowerUP.cs" />
      <Compile Include="Assets\Scripts\GerenciadorPlacar.cs" />
      <Compile Include="Assets\Scripts\GiraTurreta.cs" />
+     <Compile Include="Assets\Scripts\LimitaEixoZ.cs" />
      <Compile Include="Assets\Scripts\atirarProjetil.cs" />
      <Compile Include="Assets\Scripts\mudaCena.cs" />
      <None Include="Assets\Turret\Shaders\AlphaTest_Complete.shader" />

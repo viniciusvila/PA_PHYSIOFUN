@@ -14,13 +14,16 @@ public class atirarProjetil : MonoBehaviour {
 	public double fireRate = 0.5;
 	private double lastShot = 0.0;
 	// Use this for initialization
-	void Start () {
 
+	public Component controlador;
+
+	void Start () {
+		controlador = GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ();
 	}
 
 	// Update is called once per frame
 		void Update () {
-		if (Time.time > fireRate + lastShot)
+		if ((Time.time > fireRate + lastShot) && ( controlador.GetComponent<GerenciadorPlacar>().jogoAtivo == 1))
 		{
 			Shoot ();
 			lastShot = Time.time;
@@ -31,33 +34,33 @@ public class atirarProjetil : MonoBehaviour {
 	void Shoot (){
 
 		//if (Input.GetKeyDown (KeyCode.F)) {
-			if ((GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().jogoterminado == 0)  && (GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().comboDefesa >= 4) 
-				&& (GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().golsTomados < 4)  && (GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().bombaAtivo == 1) )
+		if ((controlador.GetComponent<GerenciadorPlacar> ().jogoterminado == 0)  && (controlador.GetComponent<GerenciadorPlacar> ().comboDefesa >= 4) 
+			&& (controlador.GetComponent<GerenciadorPlacar> ().golsTomados < 4)  && (controlador.GetComponent<GerenciadorPlacar> ().bombaAtivo <= 0) )
 			{
 				Rigidbody projetilInstanciado;
 				projetilInstanciado = Instantiate (projetilBomba, finaldoCano.position, Quaternion.Euler(180, 0, 0)) as Rigidbody;
 				projetilInstanciado.AddForce (finaldoCano.forward * forcaTiro); 
 
-				GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().bombaAtivo = 0;
+			controlador.GetComponent<GerenciadorPlacar> ().bombaAtivo = 5;
 			
-			}else if ((GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().jogoterminado == 0)  && (GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().golsTomados >= 4)
-				&& (GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().coracaoAtivo <= 1))
+		}else if ((controlador.GetComponent<GerenciadorPlacar> ().jogoterminado == 0)  && (controlador.GetComponent<GerenciadorPlacar> ().golsTomados >= 4)
+			&& (controlador.GetComponent<GerenciadorPlacar> ().coracaoAtivo <= 0))
 			{
 				Rigidbody projetilInstanciado;
 				projetilInstanciado = Instantiate (projetilVida, finaldoCano.position, Quaternion.Euler(-90, 0, 0) ) as Rigidbody;
 
 				projetilInstanciado.AddForce (finaldoCano.forward * forcaTiro); 
-				GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().coracaoAtivo = 0;
-				GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().coracaoAtivo = 4;
+				controlador.GetComponent<GerenciadorPlacar> ().coracaoAtivo = 0;
+				controlador.GetComponent<GerenciadorPlacar> ().coracaoAtivo = 5;
 
 
-			}else if (GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().jogoterminado == 0)  
+		}else if (controlador.GetComponent<GerenciadorPlacar> ().jogoterminado == 0)  
 			{
 				Rigidbody projetilInstanciado;
 				projetilInstanciado = Instantiate (projetil, finaldoCano.position, finaldoCano.rotation) as Rigidbody;
 
-				GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().bombaAtivo = 1;
-				GameObject.Find ("GameController").GetComponent<GerenciadorPlacar> ().coracaoAtivo -= 1;
+				controlador.GetComponent<GerenciadorPlacar> ().bombaAtivo -= 1;
+				controlador.GetComponent<GerenciadorPlacar> ().coracaoAtivo -= 1;
 
 				projetilInstanciado.AddForce (finaldoCano.forward * forcaTiro); 
 			}
